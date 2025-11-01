@@ -175,7 +175,6 @@ Tab:CreateButton({ Name = "bedwars", Callback = function()
       loadstring(game:HttpGet("https://raw.githubusercontent.com/VapeVoidware/VWPacket/main/NewMainScript.lua", true))()
 end })
 
-end })
 Tab:CreateButton({ Name = "piano ", Callback = function()
        loadstring(game:HttpGet("https://raw.githubusercontent.com/hellohellohell012321/TALENTLESS/main/TALENTLESS", true))()
 end })
