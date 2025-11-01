@@ -45,13 +45,13 @@ Tab:CreateButton({ Name = "Flyを起動", Callback = function()
 end })
 
 -- JumpPower スライダー
-Tab:CreateSlider({ Name = "カンガルー", Range = {1,1000000}, Increment = 1, CurrentValue = 50, Suffix = "戦闘力", Callback = function(v)
+Tab:CreateSlider({ Name = "カンガルー", Range = {1,1000}, Increment = 1, CurrentValue = 50, Suffix = "戦闘力", Callback = function(v)
     local pl = game.Players.LocalPlayer.Character and game.Players.LocalPlayer.Character:FindFirstChild("Humanoid")
     if pl then pl.JumpPower = v end
 end })
 
 -- WalkSpeed スライダー
-Tab:CreateSlider({ Name = "50m走が早くなる魔法", Range = {1,10000000}, Increment = 1, CurrentValue = 16, Suffix = "FXに投資", Callback = function(v)
+Tab:CreateSlider({ Name = "50m走が早くなる魔法", Range = {1,1000}, Increment = 1, CurrentValue = 16, Suffix = "FXに投資", Callback = function(v)
     local pl = game.Players.LocalPlayer.Character and game.Players.LocalPlayer.Character:FindFirstChild("Humanoid")
     if pl then pl.WalkSpeed = v end
 end })
